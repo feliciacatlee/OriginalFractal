@@ -16,6 +16,8 @@ public void draw() {
   //line(50, 50, 280, -70);
   //line(150, 130, 250, 250);
   bright-=0.05;
+  if(bright < 0.05)
+    bright = 0.05;
   myFractal(300, 300, 80, bright);
 }
 
